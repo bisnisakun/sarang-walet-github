@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Walet Archive AI</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    body{
+      background:#0f172a;
+    }
+
+    .glass{
+      background: rgba(255,255,255,0.05);
+      backdrop-filter: blur(12px);
+      border:1px solid rgba(255,255,255,0.08);
+    }
+
+    .gradient{
+      background: linear-gradient(to right,#38bdf8,#06b6d4);
+      -webkit-background-clip:text;
+      -webkit-text-fill-color:transparent;
+    }
+
+    .card-hover{
+      transition:0.3s;
+    }
+
+    .card-hover:hover{
+      transform:translateY(-5px);
+      box-shadow:0 10px 30px rgba(0,0,0,0.4);
+    }
+  </style>
+</head>
+
+<body class="text-white">
+
+  <!-- NAVBAR -->
+  <nav class="fixed top-0 left-0 w-full z-50 glass">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+
+      <h1 class="text-2xl font-bold gradient">
+        Walet Archive AI
+      </h1>
+
+      <div class="hidden md:flex gap-8 text-sm text-slate-300">
+        <a href="#gallery" class="hover:text-cyan-400">Gallery</a>
+        <a href="#fitur" class="hover:text-cyan-400">Fitur</a>
+        <a href="#tentang" class="hover:text-cyan-400">Tentang</a>
+      </div>
+
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="min-h-screen flex items-center px-6">
+
+    <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+
+      <!-- LEFT -->
+      <div>
+
+        <div class="inline-block px-4 py-2 rounded-full bg-cyan-500/20 text-cyan-300 text-sm mb-6">
+          YOLOv8 Segmentation Archive
+        </div>
+
+        <h1 class="text-5xl md:text-7xl font-extrabold leading-tight mb-6">
+
+          Penyimpanan
+          <span class="gradient">Hasil Segmentasi</span>
+          Sarang Walet
+
+        </h1>
+
+        <p class="text-slate-300 text-lg leading-relaxed mb-8">
+
+          Sistem website untuk menyimpan,
+          melihat, dan mendownload hasil segmentasi
+          otomatis dari YOLOv8 secara modern dan terorganisir.
+
+        </p>
+
+        <div class="flex flex-wrap gap-4">
+
+          <button class="px-7 py-4 bg-cyan-500 hover:bg-cyan-400 rounded-2xl font-semibold transition">
+            Buka Gallery
+          </button>
+
+          <button class="px-7 py-4 border border-slate-600 hover:border-cyan-400 rounded-2xl transition">
+            Lihat History
+          </button>
+
+        </div>
+
+      </div>
+
+      <!-- RIGHT -->
+      <div class="relative">
+
+        <div class="absolute -top-10 -left-10 w-60 h-60 bg-cyan-500 rounded-full blur-3xl opacity-20"></div>
+
+        <div class="glass p-5 rounded-3xl relative z-10">
+
+          <img
+            src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=1200&auto=format&fit=crop"
+            class="rounded-2xl w-full h-[450px] object-cover"
+          >
+
+          <div class="grid grid-cols-3 gap-4 mt-5">
+
+            <div class="bg-slate-900 rounded-2xl p-4 text-center">
+              <h2 class="text-3xl font-bold">128</h2>
+              <p class="text-slate-400 text-sm mt-2">Foto</p>
+            </div>
+
+            <div class="bg-slate-900 rounded-2xl p-4 text-center">
+              <h2 class="text-3xl font-bold">98%</h2>
+              <p class="text-slate-400 text-sm mt-2">Akurasi</p>
+            </div>
+
+            <div class="bg-slate-900 rounded-2xl p-4 text-center">
+              <h2 class="text-3xl font-bold">24h</h2>
+              <p class="text-slate-400 text-sm mt-2">Upload</p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- FITUR -->
+  <section id="fitur" class="py-28 px-6">
+
+    <div class="max-w-7xl mx-auto">
+
+      <div class="text-center mb-16">
+
+        <h2 class="text-5xl font-bold mb-5">
+          Fitur Website
+        </h2>
+
+        <p class="text-slate-400 max-w-2xl mx-auto">
+          Website arsip hasil segmentasi YOLOv8
+          dengan tampilan modern dan mudah digunakan.
+        </p>
+
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+
+        <!-- CARD -->
+        <div class="glass p-8 rounded-3xl card-hover">
+
+          <div class="text-5xl mb-5">🖼️</div>
+
+          <h3 class="text-2xl font-bold mb-4">
+            Gallery Hasil
+          </h3>
+
+          <p class="text-slate-400 leading-relaxed">
+            Menampilkan seluruh hasil segmentasi
+            sarang walet dalam bentuk gallery modern.
+          </p>
+
+        </div>
+
+        <!-- CARD -->
+        <div class="glass p-8 rounded-3xl card-hover">
+
+          <div class="text-5xl mb-5">⬇️</div>
+
+          <h3 class="text-2xl font-bold mb-4">
+            Download Gambar
+          </h3>
+
+          <p class="text-slate-400 leading-relaxed">
+            Setiap hasil segmentasi dapat
+            didownload kapan saja dengan mudah.
+          </p>
+
+        </div>
+
+        <!-- CARD -->
+        <div class="glass p-8 rounded-3xl card-hover">
+
+          <div class="text-5xl mb-5">☁️</div>
+
+          <h3 class="text-2xl font-bold mb-4">
+            Upload Otomatis
+          </h3>
+
+          <p class="text-slate-400 leading-relaxed">
+            YOLOv8 otomatis mengirim hasil segmentasi
+            langsung ke website dan database.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- GALLERY -->
+<section id="gallery" class="py-28 px-6 bg-slate-950">
+
+    <div class="max-w-7xl mx-auto">
+
+        <div class="mb-14">
+
+            <h2 class="text-5xl font-bold mb-3">
+                Gallery Segmentasi
+            </h2>
+
+            <p class="text-slate-400">
+                Hasil segmentasi YOLOv8 yang tersimpan di server
+            </p>
+
+        </div>
+
+        <!-- GRID -->
+        <div class="grid md:grid-cols-3 gap-8">
+
+            {% for file in files %}
+
+            <div class="glass rounded-3xl overflow-hidden card-hover">
+
+                <!-- GAMBAR -->
+                <img
+                    src="{{ url_for('static', filename='uploads/' + file.filename) }}"
+                    class="w-full h-64 object-cover"
+                >
+
+                <div class="p-6">
+
+                    <!-- NAMA FILE -->
+                    <h3 class="text-xl font-bold mb-2 break-all">
+                        {{ file.filename }}
+                    </h3>
+
+                    <!-- TANGGAL -->
+                    <p class="text-slate-400 text-sm mb-5">
+                        Upload: {{ file.time }}
+                    </p>
+
+                    <!-- BUTTON -->
+                    <div class="flex gap-3">
+
+                        <!-- LIHAT -->
+                        <a
+                            href="/view/{{ file.filename }}"
+                            target="_blank"
+                            class="flex-1 bg-cyan-500 hover:bg-cyan-400 py-3 rounded-xl transition text-center"
+                        >
+                            Lihat
+                        </a>
+
+                        <!-- DOWNLOAD -->
+                        <a
+                            href="/download/{{ file.filename }}"
+                            class="flex-1 border border-slate-600 hover:border-cyan-400 py-3 rounded-xl transition text-center"
+                        >
+                            Download
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            {% endfor %}
+
+        </div>
+
+    </div>
+
+</section>
+
+  <!-- TENTANG -->
+  <section id="tentang" class="py-28 px-6">
+
+    <div class="max-w-5xl mx-auto text-center">
+
+      <h2 class="text-5xl font-bold mb-8">
+        Tentang Sistem
+      </h2>
+
+      <p class="text-slate-400 text-lg leading-relaxed">
+
+        Website ini digunakan untuk menyimpan hasil segmentasi
+        sarang walet dari model YOLOv8 secara otomatis.
+        Setiap hasil segmentasi akan dikirim langsung dari Python
+        ke server website dan disimpan dalam gallery untuk
+        memudahkan monitoring dan download data.
+
+      </p>
+
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-slate-800 py-10 px-6">
+
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-5">
+
+      <h2 class="text-2xl font-bold gradient">
+        Walet Archive AI
+      </h2>
+
+      <p class="text-slate-500 text-sm">
+        AI Segmentation Archive System © 2026
+      </p>
+
+    </div>
+
+  </footer>
+
+</body>
+</html>
